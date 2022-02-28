@@ -1,4 +1,74 @@
-/* Stylesheet for CSS Demo */
+/* box sizing */
+
+html {
+  box-sizing: border-box;
+}
+/* down below is for older browsers to recognize the box sizing */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* global styles */
+/* color scheme: standard #FFFFFF and #000000 */
+
 body {
-    background-color: #808080;
+  font-family: 'Red Hat Text', sans-serif;
+  margin:0px;
+}
+
+header.primary {
+background-color:#FFFFFF;
+/*background is a shorter way to say it */
+text-align:left;
+color:#000000;
+/* padding, choose one: */
+padding:40px;
+/* all 4 corners*/
+padding:40px 40px;
+/* top and bottom */
+padding:40px 40px 40px 40px;
+/* all four sides short form */
+/* these these are aso used for padding */
+
+text-shadow:2px 2px 2px #9B9A97
+/* 1. x coordinate shadow, 2. y coordinate shadow, 3. shadow blur, 4. color*/
+}
+
+header.primary h1 {
+font: size 1rem;
+/* em = base size of the parent, rem= font of the document */
+}
+
+header.primary h1 a{
+  /* targets the hyperlink in the header*/
+  color:#000000;
+  text-decoration:none;
+  /* removes the underline in the hyperlink*/
+}
+
+header.primary h2 {
+  font: size 1.5rem;
+  margin: 20px auto 20px;
+}
+
+header.primary nav{}
+
+header.primary nav ul{
+padding:0;
+/* removes the extra bullet point space */
+
+}
+
+header.primary nav ul li{
+list-style-type:none;
+/* removed the bullet dots, can be used to replace it too*/
+}
+
+header.primary nav ul li a{
+color:#000000;
+list-style-type:none;
+background-color:#FFFFFF;
+padding:1px;
 }
