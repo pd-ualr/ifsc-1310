@@ -16,6 +16,10 @@ html {
   margin:40px auto;
 }
 
+img{
+  max-width:100%;
+}
+ 
 /* global styles */
 /* color scheme: standard #FFFFFF and #000000 */
 
@@ -25,7 +29,7 @@ body {
 }
 
 header.primary {
-background-color:#FFFFFF;
+background-color:#D3D3D3;
 /*background is a shorter way to say it */
 text-align:center;
 color:#000000;
@@ -59,8 +63,10 @@ header.primary h2 {
   margin: 20px auto 20px;
 }
 
-header.primary nav{
-
+header.primary nav {
+  width: 80vw;
+  margin: 0 auto;
+  max-width: 900px;
 }
 
 header.primary nav ul{
@@ -82,7 +88,7 @@ header.primary nav ul li a{
 color:#FFFFFF;
 list-style-type:none;
 background-color:rgba(0,0,0,.65);
-padding:5px;
+padding:8px;
 border-radius:20px;
 transition:1s;
 }
@@ -102,6 +108,84 @@ section#intro h2{
   padding-bottom: 1rem;
 }
 
+#content{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+}
+
+#content article.post{
+  width:30%;
+  box-shadow:0 2px 2px rgba(0,0,0,.4);
+  padding: 10px;
+  font-size:.7rem;
+}
+
+#content article.post:hover{
+  box-shadow:0 8px 16px rgba(0,0,0,.4) 
+} 
+
+time.post-date, figcaption, .post-meta{
+  text-transform:uppercase;
+  color:black
+}
+
+.post figure{
+  margin:0;
+}
+/*removes the figure border */
+
+.post img{
+  border: 5px solid black;
+  padding: 2px;
+  margin: 5px 0;
+}
+
+.post a{
+  color:black;
+  transition:.5s;
+}
+
+aside[role="complementary"]{
+  background:#F3F3F3;
+  color:black;
+  padding:1.8rem;
+}
+
+.post a:hover, .post a:active{
+  text-decoration:none;
+}
+
+aside div.container{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+aside article.widget{
+width:44%;
+}
+
+article.widget a{
+  color:black;
+  display:block;
+  margin-top:1.2rem;
+  text-align:left;
+}
+
+article.widget footer{
+  display:none;
+}
+
+#colophon h6{
+  padding:20px;
+  margin:0;
+  text-align:center;
+  color:black;
+  font-size:.8rem;
+  background-color:white;
+}
+
 @media screen and (max-width:600px){
   
   header.primary nav ul {
@@ -117,3 +201,4 @@ section#intro h2{
   }
   
 }
+
