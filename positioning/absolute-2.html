@@ -17,7 +17,8 @@ body {
 	line-height: 24px;
 }
 #wrapper {
-	background-color: #FFF;
+	background-color: #000000;
+	/* replaced the background color for better visiblity */
 	border-top-width: 1px;
 	border-right-width: 1px;
 	border-bottom-width: 1px;
@@ -27,23 +28,45 @@ body {
 	border-bottom-style: solid;
 	border-left-style: solid;
 	width: 800px;
+	/* added height to accomodate the colors position */
+	height:800px;
 	margin-right: auto;
 	margin-left: auto;
+	position:relative;
+}
+.detail{
+	width:200px;
+	height:200px;
+	position:absolute;
 }
 #red {
 	background-color: #900;
+	top:0;
+	left:0;
 }
 #green {
 	background-color: #090;
+	top:0;
+	right:0;
 }
 #blue {
 	background-color: #00F;
+	position:absolute;
+	bottom:0;
+	left:0;
 }
 #purple {
 	background-color: #63C;
+	bottom:0;
+	right:0;
 }
 #footer {
 	background-color: #666;
+	clear:both;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* i first tried using flexbox to solve this, but it didn't work, so i researched the absolute center positioning and found this from w3cschools */
 }
 h1 {
 	color: #000;
@@ -56,11 +79,11 @@ h1 {
 <body>
 <h1>Absolute 2</h1>
 <div id="wrapper">
-  <div id="red">Red</div>
-  <div id="green">Green</div>
-  <div id="blue">Blue</div>
-  <div id="purple">Purple</div>
-  <div id="footer">Footer</div>
+  <div id="red" class="detail">Red</div>
+  <div id="green" class="detail">Green</div>
+  <div id="blue" class="detail">Blue</div>
+  <div id="purple" class="detail">Purple</div>
+  <div id="footer" class="detail">Footer</div>
 </div>
 </body>
 </html>

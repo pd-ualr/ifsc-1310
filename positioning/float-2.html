@@ -17,7 +17,8 @@ body {
 	line-height: 24px;
 }
 #wrapper {
-	background-color: #FFF;
+	background-color: #000000;
+	/* replaced the background color for better visiblity */
 	border-top-width: 1px;
 	border-right-width: 1px;
 	border-bottom-width: 1px;
@@ -30,6 +31,13 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 }
+.detail{
+	width:175px;
+	height:200px;
+	margin-left: 20px;
+	margin-top: 20px;
+	float:left;
+}
 #red {
 	background-color: #900;
 }
@@ -38,12 +46,16 @@ body {
 }
 #blue {
 	background-color: #00F;
+	margin-bottom:20px;
+	/* i had placed this margin bottom because footer refuses to have a margin top for some reason, please help me where I went wrong */
 }
 #purple {
 	background-color: #63C;
 }
 #footer {
 	background-color: #666;
+	clear: both;
+	margin:20px;
 }
 h1 {
 	color: #000;
@@ -56,10 +68,10 @@ h1 {
 <body>
 <h1>Float 2</h1>
 <div id="wrapper">
-  <div id="red">Red</div>
-  <div id="green">Green</div>
-  <div id="blue">Blue</div>
-  <div id="purple">Purple</div>
+  <div id="red" class="detail">Red</div>
+  <div id="green" class="detail">Green</div>
+  <div id="blue" class="detail">Blue</div>
+  <div id="purple" class="detail">Purple</div>
   <div id="footer">Footer</div>
 </div>
 </body>

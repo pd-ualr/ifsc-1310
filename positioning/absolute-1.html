@@ -17,7 +17,8 @@ body {
 	line-height: 24px;
 }
 #wrapper {
-	background-color: #FFF;
+	background-color: #000000;
+	/* replaced the background color for better visiblity */
 	border-top-width: 1px;
 	border-right-width: 1px;
 	border-bottom-width: 1px;
@@ -30,20 +31,38 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 }
+
+.detail{
+	width:200px;
+	height:200px;
+	position:absolute;
+}
 #red {
 	background-color: #900;
+	top:0;
+	left:0;
 }
 #green {
 	background-color: #090;
+	top:0;
+	right:0;
 }
 #blue {
 	background-color: #00F;
+	bottom:0;
+	left:0;
 }
 #purple {
 	background-color: #63C;
+	bottom:0;
+	right:0;
 }
 #footer {
 	background-color: #666;
+	width:200px;
+	height:200px;
+	clear:both;
+	margin:20px auto;
 }
 h1 {
 	color: #000;
@@ -56,10 +75,10 @@ h1 {
 <body>
 <h1>Absolute 1</h1>
 <div id="wrapper">
-  <div id="red">Red</div>
-  <div id="green">Green</div>
-  <div id="blue">Blue</div>
-  <div id="purple">Purple</div>
+  <div id="red" class="detail">Red</div>
+  <div id="green" class="detail">Green</div>
+  <div id="blue" class="detail">Blue</div>
+  <div id="purple" class="detail">Purple</div>
   <div id="footer">Footer</div>
 </div>
 </body>
