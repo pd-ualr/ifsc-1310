@@ -209,9 +209,6 @@ table{
   border-collapse:collapse;
   text-align: left;
 }
-
-tr{}
-
 tr:nth-child(even){
   background-color: whitesmoke
 }
@@ -255,7 +252,7 @@ table caption{
 }
 
 #additional-elements blockquote{
-  background-color:#fffffff;
+  background-color:#ffffff;
   padding:30px 40px;
   border:5px solid #000000;
   font-size:1.2rem;
@@ -268,8 +265,6 @@ table caption{
   font-weight:bold;
   margin-top:1.2rem;
 }
-
-dl{}
 dt{
   font-weight:bold;
   }
