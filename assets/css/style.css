@@ -1,0 +1,106 @@
+/* Box Sizing */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+/* Utility Classes */
+  .container {
+    width: 80vw;
+    margin: 40px auto;
+  }
+  
+  img{
+    max-width:100%;
+  }
+  
+  .img-right{
+    float:right;
+    margin-left:20px;
+    border:2px solid #c0c0c0;
+    padding:5px;
+  }
+  
+  .img-left{
+    float:left;
+    margin-right:20px;
+    border:2px solid #c0c0c0;
+    padding:5px;
+  }
+  
+  .img-center{
+    display:block;
+    margin:20px auto;
+    border:2px solid #c0c0c0;
+    padding:5px;
+  }
+  
+  /* Global Styles */
+  
+  /* Color Scheme */
+  
+  body {
+    font-family: 'Red Hat Text', sans-serif;
+    margin:0px;
+  }
+
+  header {
+      padding: 20px 40px; 
+      font-size: 2rem;
+      background-color:rgb(192, 192, 192); fill:rgb(203, 203, 203); background-size:342px 342px; background-repeat:repeat; background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500' fill-opacity='1' style='enable-background:new 0 0 500 500'%3E%3Cstyle%3E .st2{fill:rgb(203, 203, 203)} %3C/style%3E%3Cg style='display:none'%3E%3Cpath style='display:inline;fill:%236D6E71' d='M-64.9-73.9h675v675h-675z' id='Layer_2'/%3E%3C/g%3E%3Cg id='Layer_1'%3E%3Ccircle class='st2' cx='417.4' cy='83.7' r='82.8'/%3E%3Cpath class='st2' d='M78.1 82.7C78.1 38.2 43.1 2-.8 0v165.3c43.9-2 78.9-38.2 78.9-82.6zM87.9 82.7c0 44.4 35 80.7 78.9 82.7V0c-43.9 2-78.9 38.2-78.9 82.7zM167.2 167.3v165.3c43.9-2 78.9-38.2 78.9-82.7s-34.9-80.6-78.9-82.6zM332.8 332.7V167.3c-43.9 2-78.9 38.2-78.9 82.7s34.9 80.7 78.9 82.7zM417.3 253.7c-44.4 0-80.7 35-82.7 78.9H500c-2-43.9-38.2-78.9-82.7-78.9zM417.3 246.5c44.4 0 80.7-35 82.7-78.9H334.7c2 43.9 38.2 78.9 82.6 78.9zM84 421.1c-44.4 0-80.7 35-82.7 78.9h165.3c-2-43.9-38.2-78.9-82.6-78.9zM84 413.4c44.4 0 80.7-35 82.7-78.9H1.3c2 43.9 38.2 78.9 82.7 78.9zM250.1 78.9c44.4 0 80.7-35 82.7-78.9H167.4c2 43.9 38.3 78.9 82.7 78.9zM250.1 87.5c-44.4 0-80.7 35-82.7 78.9h165.3c-1.9-43.9-38.2-78.9-82.6-78.9z'/%3E%3Ccircle class='st2' cx='84.1' cy='250.1' r='82.8'/%3E%3Cpath class='st2' d='M167.2 334.5v165.3c43.9-2 78.9-38.2 78.9-82.7s-34.9-80.6-78.9-82.6zM421.9 417.2c0 44.4 35 80.7 78.9 82.7V334.6c-43.9 1.9-78.9 38.2-78.9 82.6z'/%3E%3Ccircle class='st2' cx='333.2' cy='417.3' r='82.8'/%3E%3C/g%3E%3C/svg%3E");
+  text-align: center;
+  text-decoration: underline;
+    }
+
+
+aside {
+    padding-top: 20px;
+    padding-bottom:20px;
+    text-decoration: none;
+    display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+}
+
+aside h2 {
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+aside article.content{
+    width:44%;
+  }
+
+aside a:link, aside a:visited {
+  color: black;
+}
+
+.line {
+    border-right: 3.8px dashed #000000;
+}
+
+ul {
+    font-size: 1.3rem;
+}
+
+.divide {
+    border-top: 3.8px dashed #000000;
+    padding-top: 20px;
+}
+
+.content p {
+    font-size: 1.3rem;
+}
+footer h6{
+    padding:20px;
+    margin:0;
+    text-align:center;
+    background-color:rgb(203, 203, 203);
+    font-size:1rem;
+    text-transform:uppercase;
+  }
