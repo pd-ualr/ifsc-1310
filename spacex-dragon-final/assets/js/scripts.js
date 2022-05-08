@@ -8,7 +8,8 @@ $(document).ready(function() {
       slide: 'div',
       cssEase: 'linear',
       autoplay: false,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 600,
+      arrows: false,
     });
 
 });
